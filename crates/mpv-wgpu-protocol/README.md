@@ -1,7 +1,7 @@
 # mpv-wgpu-protocol
 
-The wire protocol between [`mpv-wgpu-player`](https://github.com/PoHsuanLai/mpv-wgpu/tree/master/crates/mpv-wgpu-player)
-in subprocess mode and the [`mpv-wgpu-cplugin`](https://github.com/PoHsuanLai/mpv-wgpu/tree/master/crates/mpv-wgpu-cplugin)
+The wire protocol between [`mpv-wgpu-player`](https://github.com/Bardo-DE/mpv-wgpu/tree/master/crates/mpv-wgpu-player)
+in subprocess mode and the [`mpv-wgpu-cplugin`](https://github.com/Bardo-DE/mpv-wgpu/tree/master/crates/mpv-wgpu-cplugin)
 that runs inside the user's `mpv`. Both sides depend on this crate. It does not link or mention libmpv.
 
 - `Message`: a versioned, compact binary encoding (little endian, length-prefixed strings) of the handshake,

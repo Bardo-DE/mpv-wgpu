@@ -1,6 +1,6 @@
 # mpv-wgpu
 
-[![ci](https://github.com/PoHsuanLai/mpv-wgpu/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/PoHsuanLai/mpv-wgpu/actions/workflows/ci.yml)
+[![ci](https://github.com/Bardo-DE/mpv-wgpu/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/Bardo-DE/mpv-wgpu/actions/workflows/ci.yml)
 [![crates.io](https://img.shields.io/crates/v/mpv-wgpu.svg)](https://crates.io/crates/mpv-wgpu)
 [![docs.rs](https://docs.rs/mpv-wgpu/badge.svg)](https://docs.rs/mpv-wgpu)
 [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE-MIT)
@@ -11,7 +11,7 @@ The picture chain of `vo=gpu` and `vo=gpu-next`, as static WGSL on a caller-owne
 
 `vo=gpu` generates GLSL per frame and draws through an `ra` backend. `vo=gpu-next` hands the same job to libplacebo. This crate replaces that image path: csp, chroma location, EOTF, a cubic scale, one spline tone map, video-eq once in linear light, ordered dither, and premultiplied bitmap overlays. The caller supplies Y, U, V or RGBA, the way a decoder's `mp_image` would. There is no libplacebo, no `ra` backend, and no shader generator. The result is not bit-exact with libplacebo. The spline is a Hermite in PQ, not `tone-mapping=bt.2390`.
 
-The host owns the device, the queue, and the swapchain. File playback, libass, and `vo=libmpv` are [`mpv-wgpu-player`](https://github.com/PoHsuanLai/mpv-wgpu/tree/master/crates/mpv-wgpu-player). That player does not run mpv's composited `rgb0` frame through this renderer.
+The host owns the device, the queue, and the swapchain. File playback, libass, and `vo=libmpv` are [`mpv-wgpu-player`](https://github.com/Bardo-DE/mpv-wgpu/tree/master/crates/mpv-wgpu-player). That player does not run mpv's composited `rgb0` frame through this renderer.
 
 ```toml
 mpv-wgpu = "0.1"

@@ -1,6 +1,6 @@
 # mpv-wgpu
 
-[![ci](https://github.com/PoHsuanLai/mpv-wgpu/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/PoHsuanLai/mpv-wgpu/actions/workflows/ci.yml)
+[![ci](https://github.com/Bardo-DE/mpv-wgpu/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/Bardo-DE/mpv-wgpu/actions/workflows/ci.yml)
 [![mpv-wgpu on crates.io](https://img.shields.io/crates/v/mpv-wgpu.svg?label=mpv-wgpu)](https://crates.io/crates/mpv-wgpu)
 [![mpv-wgpu on docs.rs](https://img.shields.io/docsrs/mpv-wgpu.svg?label=mpv-wgpu%20docs)](https://docs.rs/mpv-wgpu)
 [![mpv-wgpu-player on crates.io](https://img.shields.io/crates/v/mpv-wgpu-player.svg?label=mpv-wgpu-player)](https://crates.io/crates/mpv-wgpu-player)

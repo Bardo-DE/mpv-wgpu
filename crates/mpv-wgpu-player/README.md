@@ -1,6 +1,6 @@
 # mpv-wgpu-player
 
-[![ci](https://github.com/PoHsuanLai/mpv-wgpu/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/PoHsuanLai/mpv-wgpu/actions/workflows/ci.yml)
+[![ci](https://github.com/Bardo-DE/mpv-wgpu/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/Bardo-DE/mpv-wgpu/actions/workflows/ci.yml)
 [![crates.io](https://img.shields.io/crates/v/mpv-wgpu-player.svg)](https://crates.io/crates/mpv-wgpu-player)
 [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE-MIT)
 [![Apache 2.0 license](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE-APACHE)
@@ -12,7 +12,7 @@ mpv with the VO window removed. The core is the same one the `mpv` binary uses. 
 
 The OpenGL render API and `ra_*` are not used. Hwdec may decode inside mpv. The texture is still the software frame. OSC, `input-default-bindings`, and `input-vo-keyboard` are off. The host is the UI.
 
-Planes the caller already has, in place of the gpu-next picture chain, are [`mpv-wgpu`](https://github.com/PoHsuanLai/mpv-wgpu/tree/master/crates/mpv-wgpu). This player does not pass the composited `rgb0` frame through that renderer.
+Planes the caller already has, in place of the gpu-next picture chain, are [`mpv-wgpu`](https://github.com/Bardo-DE/mpv-wgpu/tree/master/crates/mpv-wgpu). This player does not pass the composited `rgb0` frame through that renderer.
 
 ```toml
 mpv-wgpu-player = "0.1"                                                          # libmpv linked in
