@@ -21,6 +21,7 @@ fn run() -> Result<(), Box<dyn std::error::Error>> {
         power_preference: wgpu::PowerPreference::HighPerformance,
         compatible_surface: None,
         force_fallback_adapter: true,
+        apply_limit_buckets: false,
     }))?;
     let (device, queue) = pollster::block_on(adapter.request_device(&wgpu::DeviceDescriptor {
         label: Some("consumer"),

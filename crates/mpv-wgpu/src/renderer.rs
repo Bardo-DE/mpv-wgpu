@@ -2410,6 +2410,7 @@ mod tests {
             power_preference: wgpu::PowerPreference::HighPerformance,
             compatible_surface: None,
             force_fallback_adapter: fallback,
+            apply_limit_buckets: false,
         }))
         .map_err(|err| err.to_string())
     }
@@ -2460,7 +2461,7 @@ mod tests {
             .poll(wgpu::PollType::wait_indefinitely())
             .expect("poll readback");
         recv.recv().expect("map callback").expect("map buffer");
-        let view = buffer.slice(..).get_mapped_range();
+        let view = buffer.slice(..).get_mapped_range().expect("mapped range");
         let mut pixels = Vec::with_capacity((width * height) as usize);
         for row in 0..height as usize {
             let start = row * stride as usize;

@@ -21,7 +21,7 @@ subprocess = ["dep:mpv-wgpu-protocol"]
 mpv-wgpu = { version = "0.1.0", path = "../mpv-wgpu" }
 rsmpv = { version = "0.2", features = ["render"], optional = true }
 mpv-wgpu-protocol = { version = "0.1.0", path = "../mpv-wgpu-protocol", optional = true }
-wgpu = "29"
+wgpu = "30"
 bytemuck = { version = "1", features = ["derive"] }
 thiserror = "2"
 log = "0.4"
@@ -32,4 +32,4 @@ mpv-wgpu-cplugin = { path = "../mpv-wgpu-cplugin" }
 winit = "0.30"
 pollster = "0.4"
 env_logger = "0.11"
-naga = "29"
+naga = { version = "30", features = ["wgsl-in"] }

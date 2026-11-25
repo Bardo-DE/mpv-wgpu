@@ -154,7 +154,7 @@ With the `in-process` feature `pkg-config` must find `mpv`; with only `subproces
 
 ## Building
 
-Rust 1.87 or newer. Both crates build against wgpu 29.
+Rust 1.87 or newer. Both crates build against wgpu 30.
 
 ```sh
 cargo test -p mpv-wgpu            # picture crate, no libmpv

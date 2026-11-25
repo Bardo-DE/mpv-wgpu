@@ -105,6 +105,7 @@ fn create_device() -> Result<(wgpu::Device, wgpu::Queue), String> {
                 power_preference: wgpu::PowerPreference::HighPerformance,
                 compatible_surface: None,
                 force_fallback_adapter: fallback,
+                apply_limit_buckets: false,
             })) {
                 Ok(adapter) => adapter,
                 Err(err) => {
